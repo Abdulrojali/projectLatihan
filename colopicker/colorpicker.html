@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 50vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .mainmenu{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .inputTeks{
+            width: 50%;
+            height: 50px;
+        }
+        .mainmenu button{
+            padding: 6px 8px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: red;
+            color: white;
+        }
+        .mainmenu button:hover{
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mainmenu">
+            <div class="inputTeks"></div>
+            <button class="dropColor">clickme</button>
+        </div>
+    </div>
+    <script src="colorpicker.js"></script>
+</body>
+</html>

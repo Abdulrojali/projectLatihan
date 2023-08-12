@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+            *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: 100%;
+            height: 50vh;
+            position: relative;
+        }
+        .content img{
+            display: block;
+            width: 100%;
+            height: 30vh;
+        }
+        .btnSlide{
+            width: 100%;
+            display: flex;
+            position: absolute;
+            top: 10%;
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
+        }
+        .btnSlide i{
+            font-size: 2em;
+        }
+        .btnSlide i:hover{
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="" alt="">
+        </div>
+        <div class="btnSlide">
+            <i class="fa-solid fa-chevron-left left"></i>
+            <i class="fa-solid fa-chevron-right right"></i>
+        </div>
+    </div>
+    <script src="slideimg.js"></script>
+</body>
+</html>

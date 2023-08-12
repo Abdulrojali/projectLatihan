@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .questionItem{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border: 1px solid black;
+        }
+        .teksquest,.teksanswer{
+            cursor: pointer;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .teksquest h3{
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        .teksanswer{
+            display: none;
+        }
+        .teksanswer b{
+            font-size: 1em;
+            font-weight: 200;
+        }
+        .add{
+            display: flex;
+        }
+        .teksanswer p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="questionItem">
+                <div class="teksquest">
+                    <h3>whats your answer</h3>
+                    <p>+</p>
+                    
+                </div>
+                <div class="teksanswer">
+                    <b>nope</b>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="questionItem">
+                <div class="teksquest">
+                    <h3>whats your answer</h3>
+                    <p>+</p>
+                    
+                </div>
+                <div class="teksanswer">
+                    <b>nope</b>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="questionItem">
+                <div class="teksquest">
+                    <h3>whats your answer</h3>
+                    <p>+</p>
+                    
+                </div>
+                <div class="teksanswer">
+                    <b>nope</b>
+                    <p>-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="question.js"></script>
+</body>
+</html>

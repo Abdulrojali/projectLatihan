@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar responsive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a{
+            font-size: 2em;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-decoration: none;
+            color:black;
+        }
+        .links ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        .links li a{
+            color: black;
+            font-size: 1.1em;
+            font-weight:250;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .links li a:hover{
+            opacity: .6;
+        }
+        .toggle{
+            display: none;
+           
+        }
+        .toggle i{
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .toggle i:hover{
+            opacity: 0.6;
+        }
+        .links.add{
+            display: flex;
+        }
+        @media only screen and (max-width: 768px) {
+            .links{
+                display: none;
+            }
+            .toggle{
+                display: flex;
+                position: absolute;
+                top: 25px;
+                right: 20px;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="">navbar</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .contentquestion{
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            position: relative;
+            width: 100%;
+            height: 200px;
+        }
+        .item{
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        .answer{
+            display: flex;
+            gap: 25px;
+        }
+        .answer button{
+            padding: 6px 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn button{
+            display: inline-block;
+            padding: 6px 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+        .btn button:hover{
+            opacity: .6;
+        }
+        .container .judul{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .contentplayquest{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            top: 20%;
+            text-align: center;
+        }
+        .contentplayquest h3{
+            font-size: 2em;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .contentplayquest p{
+            font-size: 1em;
+            font-weight: 200;
+        }
+        .btnplay{
+            display: flex;
+            gap: 30px; 
+        }
+        .btnplay button{
+            padding: 6px 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        .score{
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 20px;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 1px solid black;
+        }
+        .ulang{
+            position: relative;
+        }
+        .ulang{
+            padding: 6px 8px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="score">
+            <h3>score</h3>
+            <p class="nilai">0</p>
+        </div>
+        <div class="contentplayquest">
+            <div class="teks">
+                <h3>selamat datang di game question</h3>
+                <p>tekan play jika ingin memulai permainan</p>
+            </div>
+            <div class="btnplay">
+                <button class="play">play</button>
+                <button class="cancel">cancel</button>
+            </div>
+        </div>
+        <div class="contentquestion">
+            <h3 class="judul">question</h3>
+            <div class="content">
+               <div class="item">
+                <label for="">1. apa kepanjangan dari html??</label>
+                <div class="answer">
+                    <button onclick="clickme(true)">hyper teks markup language</button>
+                    <button onclick="clickme(false)">hyper teks markup lol</button>
+                    <button onclick="clickme(false)">hyper teks marksman language</button></div>
+                </div>
+               <div class="item">
+                <label for="">2. apa kepanjangan dari css??</label>
+                <div class="answer">
+                    <button onclick="clickme(true)">cading style sheets</button>
+                    <button onclick="clickme(false)">cascading style sees</button>
+                    <button onclick="clickme(false)">cascading style sheets</button>
+                 </div>
+                </div>
+               <div class="item">
+                <label for="">3. apa kepanjangan dari json??</label>
+                <div class="answer">
+                    <button onclick="clickme(false)">object norasiton</button>
+                    <button onclick="clickme(true)">object notation</button>
+                    <button onclick="clickme(false)">object narisiton</button>
+                 </div>
+               </div>
+               <div class="item">
+                <button class="ulang">anda ingin mengulang?</button>
+            </div>
+            </div>
+            <div class="btn">
+                <button class="next">next</button>
+                <button class="prev">prev</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .grids{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 30px;
+        }
+        .content{
+            border-radius: 5px;
+            border: 1px solid red;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            cursor: pointer;
+        }
+        .content:hover{
+            opacity: .8;
+        }
+        .content img{
+            display: block;
+            width: 100%;
+            height: 100px;
+        }
+        .content h3{
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .content p{
+            font-size: 1em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .modal{
+            padding: 20px;
+            font-size: 2em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .modal span{
+            color: orange;
+        }
+        .content p span:nth-child(1){
+            color: orange;
+        }
+        .content p span:nth-child(2){
+            color: rgb(29, 29, 241);
+        }
+        .content p span:nth-child(3){
+            color: rgb(194, 194, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="modal"><span>modal</span> project</h3>
+        <div class="grids">
+            <div class="content landingpage">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project landing page</h3>
+            </div>
+            <div class="content loginwebsite">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project login website</h3>
+            </div>
+            <div class="content calculator">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project calculator </h3>
+            </div>
+            <div class="content marketplace">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project marketplace</h3>
+            </div>
+            <div class="content bmicalculator">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project bmi calculator</h3>
+            </div>
+            <div class="content coffeshop">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project coffeshop</h3>
+            </div>
+            <div class="content tekateki">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project teka teki </h3>
+            </div>
+            <div class="content guntingkertas">
+                <img src="" alt="" class="imgcontent">
+                <p><span>html</span> / <span>css</span> / <span>javascript</span></p>
+                <h3>project game gunting kertas</h3>
+            </div>
+        </div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+</html>

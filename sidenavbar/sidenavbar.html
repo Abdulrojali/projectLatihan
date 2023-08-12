@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 10px;
+            box-shadow: 0 0 2px 1px gray;
+        }
+        .logo a{
+            font-size: 1.5em;
+            font-weight: 650;
+            text-decoration: none;
+            color: black;
+        }
+        .logo a span{
+            color: blueviolet;
+        }
+        .links ul{
+            list-style-type: none;
+            display: flex;
+            gap: 25px;
+        }
+        .links li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.25em;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+        .links li a:hover{
+            opacity: 0.7;
+        }
+        .navtoggle{
+            display: none;
+        }
+        .navtoggle i{
+            font-size: 1.5em;
+        }
+        .navtoggle i:hover{
+            opacity: .6;
+        }
+        @media only screen and (max-width: 768px) {
+            .links{
+                display: none;
+            }
+            .navtoggle{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+            }
+            .links.add{
+                display: flex;
+               justify-content: center;
+               align-items: center;
+               transition: ease-in 3s;
+            }
+            .links{
+                position: absolute;
+                top:70px;
+                left: 0;
+                right: 0;
+                width: 200px;
+                height: 100%;
+                background-color: whitesmoke;
+                border: 1px solid orange;
+        
+            }
+            .links ul{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="">coding <span>sidebar</span></a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+            <div class="navtoggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+    <script src="sidenavbar.js"></script>
+</body>
+</html>

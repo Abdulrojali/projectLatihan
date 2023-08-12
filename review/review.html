@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .review{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .judul{font-size: 2em; font-weight: 700;}
+        .bars{
+            width: 50px;
+            border-bottom: 1px solid blue;
+        }
+        .contentReview{
+            
+            margin-top: 150px;
+            width: 500px;
+            height: 100px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .contentReview img{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .job{
+            font-size: 1.1em;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .about{
+            width: 50%;
+            font-size: .8em;
+            font-weight: 200;
+        }
+        .btnReview{
+            display: block;
+            width:50px;
+            padding: 6px 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+        }
+        .btnReview:hover{
+            opacity: .7;
+        }
+        .slider{
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .slider i{
+            font-size: 1.5em;
+            font-weight: 800;
+        }
+        .slider i:hover{
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="review">
+            <h3 class="judul">our review</h3>
+            <p class="bars"></p>
+            <div class="contentReview">
+                <img src="girl1.jpg" alt="" class="img">
+                <h2 class="name">margaret</h2>
+                <h3 class="job">freelance</h3>
+                <p class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam molestiae deleniti aut natus commodi consectetur.</p>
+                <button class="btnReview">review</button>
+            </div>
+            <div class="slider">
+                <i class="fa-solid fa-chevron-left left"></i>
+                <i class="fa-solid fa-chevron-right right"></i>
+            </div>
+        </div>
+    </div>
+    <script src="review.js"></script>
+</body>
+</html>

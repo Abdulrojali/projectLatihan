@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 50vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .content{
+            font-size: 2em;
+            font-weight: 800;
+        }
+        .btncontent{
+            display: flex;
+            gap: 35px;
+        }
+        .btncontent button{
+            padding: 6px 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            box-shadow: none;
+        }
+        .btncontent button:hover{
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">0</div>
+        <div class="btncontent">
+            <button class="countNumber">count</button>
+            <button class="minNumber">min</button>
+            <button class="resetNumber">reset</button>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
